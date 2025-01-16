@@ -29,3 +29,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+/**
+ * @type {HTMLSpanElement}
+ */
+const copyrightDiv = document.querySelector("#copy");
+const currentYear = new Date().getFullYear();
+
+copyrightDiv.innerText = currentYear;
